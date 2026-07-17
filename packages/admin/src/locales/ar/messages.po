@@ -1076,7 +1076,7 @@ msgstr "تم إلغاء المصادقة أو انتهت مهلتها. يرجى 
 
 #: packages/admin/src/components/comments/CommentDetail.tsx:77
 #: packages/admin/src/components/comments/CommentInbox.tsx:287
-#: packages/admin/src/components/ContentSettingsPanel.tsx:1014
+#: packages/admin/src/components/ContentSettingsPanel.tsx:1011
 #: packages/admin/src/components/users/roleDefinitions.ts:30
 #: packages/admin/src/components/WelcomeModal.tsx:27
 msgid "Author"
@@ -1343,8 +1343,8 @@ msgstr "يمكنه عرض المحتوى"
 #: packages/admin/src/components/ContentSettingsPanel.tsx:84
 #: packages/admin/src/components/ContentSettingsPanel.tsx:464
 #: packages/admin/src/components/ContentSettingsPanel.tsx:612
-#: packages/admin/src/components/ContentSettingsPanel.tsx:918
-#: packages/admin/src/components/ContentSettingsPanel.tsx:971
+#: packages/admin/src/components/ContentSettingsPanel.tsx:915
+#: packages/admin/src/components/ContentSettingsPanel.tsx:968
 #: packages/admin/src/components/editor/CodeBlockNode.tsx:193
 #: packages/admin/src/components/editor/CodeBlockNode.tsx:194
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:586
@@ -1876,7 +1876,7 @@ msgstr ""
 msgid "Count"
 msgstr "العدد"
 
-#: packages/admin/src/components/ContentSettingsPanel.tsx:942
+#: packages/admin/src/components/ContentSettingsPanel.tsx:939
 #: packages/admin/src/components/MenuList.tsx:175
 #: packages/admin/src/components/Redirects.tsx:191
 #: packages/admin/src/components/Sections.tsx:212
@@ -1912,7 +1912,7 @@ msgstr "إنشاء حساب"
 msgid "Create an account"
 msgstr "إنشاء حساب"
 
-#: packages/admin/src/components/ContentSettingsPanel.tsx:890
+#: packages/admin/src/components/ContentSettingsPanel.tsx:887
 #: packages/admin/src/routes/bylines.tsx:477
 msgid "Create byline"
 msgstr "إنشاء كاتب"
@@ -2061,7 +2061,7 @@ msgstr "تم الإنشاء في"
 msgid "Creating collections and fields..."
 msgstr "جاري إنشاء المجموعات والحقول..."
 
-#: packages/admin/src/components/ContentSettingsPanel.tsx:942
+#: packages/admin/src/components/ContentSettingsPanel.tsx:939
 #: packages/admin/src/components/MenuList.tsx:175
 #: packages/admin/src/components/Redirects.tsx:188
 #: packages/admin/src/components/Sections.tsx:212
@@ -2532,8 +2532,8 @@ msgstr "عرض قائمة تنقل"
 msgid "Display category list"
 msgstr ""
 
-#: packages/admin/src/components/ContentSettingsPanel.tsx:893
-#: packages/admin/src/components/ContentSettingsPanel.tsx:955
+#: packages/admin/src/components/ContentSettingsPanel.tsx:890
+#: packages/admin/src/components/ContentSettingsPanel.tsx:952
 #: packages/admin/src/routes/bylines.tsx:482
 msgid "Display name"
 msgstr "اسم العرض"
@@ -2598,7 +2598,7 @@ msgstr "أليس لديك حساب؟ قم ب<0>التسجيل</0>"
 msgid "Done"
 msgstr "تم"
 
-#: packages/admin/src/components/ContentSettingsPanel.tsx:836
+#: packages/admin/src/components/ContentSettingsPanel.tsx:833
 msgid "Down"
 msgstr "أسفل"
 
@@ -2718,7 +2718,7 @@ msgstr "على سبيل المثال، خط CI/CD"
 msgid "e.g., MacBook Pro, iPhone"
 msgstr "مثال: MacBook Pro, iPhone"
 
-#: packages/admin/src/components/ContentSettingsPanel.tsx:845
+#: packages/admin/src/components/ContentSettingsPanel.tsx:842
 #: packages/admin/src/components/editor/PluginBlockNode.tsx:367
 #: packages/admin/src/components/editor/PluginBlockNode.tsx:368
 #: packages/admin/src/components/MenuEditor.tsx:544
@@ -2754,7 +2754,7 @@ msgstr "تعديل {collectionLabel}"
 msgid "Edit {title}"
 msgstr "تعديل {title}"
 
-#: packages/admin/src/components/ContentSettingsPanel.tsx:952
+#: packages/admin/src/components/ContentSettingsPanel.tsx:949
 msgid "Edit byline"
 msgstr "تعديل الكاتب"
 
@@ -3075,7 +3075,7 @@ msgstr "فشل إنشاء حساب المسؤول"
 msgid "Failed to create backup"
 msgstr ""
 
-#: packages/admin/src/components/ContentSettingsPanel.tsx:936
+#: packages/admin/src/components/ContentSettingsPanel.tsx:933
 msgid "Failed to create byline"
 msgstr "فشل إنشاء الكاتب"
 
@@ -3553,7 +3553,7 @@ msgstr "فشل تحديث {0}"
 msgid "Failed to update backup settings"
 msgstr ""
 
-#: packages/admin/src/components/ContentSettingsPanel.tsx:986
+#: packages/admin/src/components/ContentSettingsPanel.tsx:983
 msgid "Failed to update byline"
 msgstr "فشل تحديث الكاتب"
 
@@ -5105,7 +5105,7 @@ msgstr "لا يوجد كُتّاب متاحون في {entryLocale}. أنشئ ن�
 msgid "No bylines found"
 msgstr "لم يُعثر على كُتّاب"
 
-#: packages/admin/src/components/ContentSettingsPanel.tsx:877
+#: packages/admin/src/components/ContentSettingsPanel.tsx:874
 msgid "No bylines selected."
 msgstr "لم يتم اختيار أي كاتب."
 
@@ -5891,7 +5891,7 @@ msgstr "بقلم"
 msgid "Python"
 msgstr ""
 
-#: packages/admin/src/components/ContentSettingsPanel.tsx:885
+#: packages/admin/src/components/ContentSettingsPanel.tsx:882
 msgid "Quick create byline"
 msgstr "إنشاء كاتب بشكل سريع"
 
@@ -6031,7 +6031,7 @@ msgstr "الإصدار حديث جدًا للتثبيت"
 
 #: packages/admin/src/components/BlockKitMediaPickerField.tsx:84
 #: packages/admin/src/components/BlockKitMediaPickerField.tsx:115
-#: packages/admin/src/components/ContentSettingsPanel.tsx:854
+#: packages/admin/src/components/ContentSettingsPanel.tsx:851
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:199
 #: packages/admin/src/components/PortableTextEditor.tsx:3193
 #: packages/admin/src/components/settings/GeneralSettings.tsx:194
@@ -6297,7 +6297,7 @@ msgstr "الدور"
 msgid "Role {role}"
 msgstr "الدور {role}"
 
-#: packages/admin/src/components/ContentSettingsPanel.tsx:859
+#: packages/admin/src/components/ContentSettingsPanel.tsx:856
 msgid "Role label"
 msgstr "تسمية الدور"
 
@@ -6316,7 +6316,7 @@ msgstr ""
 msgid "Same window"
 msgstr "نفس النافذة"
 
-#: packages/admin/src/components/ContentSettingsPanel.tsx:992
+#: packages/admin/src/components/ContentSettingsPanel.tsx:989
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:395
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:589
 #: packages/admin/src/components/editor/ImageNode.tsx:264
@@ -6379,7 +6379,7 @@ msgstr "تم الحفظ"
 msgid "Saved \"{0}\"."
 msgstr ""
 
-#: packages/admin/src/components/ContentSettingsPanel.tsx:992
+#: packages/admin/src/components/ContentSettingsPanel.tsx:989
 #: packages/admin/src/components/FieldEditor.tsx:660
 #: packages/admin/src/components/MediaDetailPanel.tsx:425
 #: packages/admin/src/components/MenuEditor.tsx:626
@@ -7077,8 +7077,8 @@ msgstr "تم التخطي"
 
 #: packages/admin/src/components/BylineFieldEditor.tsx:239
 #: packages/admin/src/components/ContentSettingsPanel.tsx:394
-#: packages/admin/src/components/ContentSettingsPanel.tsx:901
-#: packages/admin/src/components/ContentSettingsPanel.tsx:963
+#: packages/admin/src/components/ContentSettingsPanel.tsx:898
+#: packages/admin/src/components/ContentSettingsPanel.tsx:960
 #: packages/admin/src/components/ContentTypeEditor.tsx:111
 #: packages/admin/src/components/ContentTypeEditor.tsx:402
 #: packages/admin/src/components/ContentTypeList.tsx:97
@@ -7747,8 +7747,8 @@ msgstr ""
 msgid "Unable to reach marketplace"
 msgstr "تعذّر الوصول إلى السوق"
 
-#: packages/admin/src/components/ContentSettingsPanel.tsx:1006
-#: packages/admin/src/components/ContentSettingsPanel.tsx:1023
+#: packages/admin/src/components/ContentSettingsPanel.tsx:1003
+#: packages/admin/src/components/ContentSettingsPanel.tsx:1020
 msgid "Unassigned"
 msgstr "لم يتم التعيين"
 
@@ -7850,7 +7850,7 @@ msgstr "عنصر واجهة بلا عنوان"
 msgid "Unverified publisher"
 msgstr "ناشر غير موثَّق"
 
-#: packages/admin/src/components/ContentSettingsPanel.tsx:833
+#: packages/admin/src/components/ContentSettingsPanel.tsx:830
 msgid "Up"
 msgstr "أعلى"
 

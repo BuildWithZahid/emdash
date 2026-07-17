@@ -1072,7 +1072,7 @@ msgstr "La autenticación fue cancelada o se agotó el tiempo de espera. Por fav
 
 #: packages/admin/src/components/comments/CommentDetail.tsx:77
 #: packages/admin/src/components/comments/CommentInbox.tsx:287
-#: packages/admin/src/components/ContentSettingsPanel.tsx:1014
+#: packages/admin/src/components/ContentSettingsPanel.tsx:1011
 #: packages/admin/src/components/users/roleDefinitions.ts:30
 #: packages/admin/src/components/WelcomeModal.tsx:27
 msgid "Author"
@@ -1339,8 +1339,8 @@ msgstr "Puede ver contenido"
 #: packages/admin/src/components/ContentSettingsPanel.tsx:84
 #: packages/admin/src/components/ContentSettingsPanel.tsx:464
 #: packages/admin/src/components/ContentSettingsPanel.tsx:612
-#: packages/admin/src/components/ContentSettingsPanel.tsx:918
-#: packages/admin/src/components/ContentSettingsPanel.tsx:971
+#: packages/admin/src/components/ContentSettingsPanel.tsx:915
+#: packages/admin/src/components/ContentSettingsPanel.tsx:968
 #: packages/admin/src/components/editor/CodeBlockNode.tsx:193
 #: packages/admin/src/components/editor/CodeBlockNode.tsx:194
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:586
@@ -1872,7 +1872,7 @@ msgstr ""
 msgid "Count"
 msgstr "Contar"
 
-#: packages/admin/src/components/ContentSettingsPanel.tsx:942
+#: packages/admin/src/components/ContentSettingsPanel.tsx:939
 #: packages/admin/src/components/MenuList.tsx:175
 #: packages/admin/src/components/Redirects.tsx:191
 #: packages/admin/src/components/Sections.tsx:212
@@ -1908,7 +1908,7 @@ msgstr "Crear una cuenta"
 msgid "Create an account"
 msgstr "Crea una cuenta"
 
-#: packages/admin/src/components/ContentSettingsPanel.tsx:890
+#: packages/admin/src/components/ContentSettingsPanel.tsx:887
 #: packages/admin/src/routes/bylines.tsx:477
 msgid "Create byline"
 msgstr "Crear firma"
@@ -2057,7 +2057,7 @@ msgstr "Creado en"
 msgid "Creating collections and fields..."
 msgstr "Creando colecciones y campos..."
 
-#: packages/admin/src/components/ContentSettingsPanel.tsx:942
+#: packages/admin/src/components/ContentSettingsPanel.tsx:939
 #: packages/admin/src/components/MenuList.tsx:175
 #: packages/admin/src/components/Redirects.tsx:188
 #: packages/admin/src/components/Sections.tsx:212
@@ -2528,8 +2528,8 @@ msgstr "Mostrar un menú de navegación"
 msgid "Display category list"
 msgstr ""
 
-#: packages/admin/src/components/ContentSettingsPanel.tsx:893
-#: packages/admin/src/components/ContentSettingsPanel.tsx:955
+#: packages/admin/src/components/ContentSettingsPanel.tsx:890
+#: packages/admin/src/components/ContentSettingsPanel.tsx:952
 #: packages/admin/src/routes/bylines.tsx:482
 msgid "Display name"
 msgstr "Nombre para mostrar"
@@ -2594,7 +2594,7 @@ msgstr "¿No tienes una cuenta? <0>Registrarse</0>"
 msgid "Done"
 msgstr "Hecho"
 
-#: packages/admin/src/components/ContentSettingsPanel.tsx:836
+#: packages/admin/src/components/ContentSettingsPanel.tsx:833
 msgid "Down"
 msgstr "Abajo"
 
@@ -2714,7 +2714,7 @@ msgstr "por ejemplo, canalización de CI/CD"
 msgid "e.g., MacBook Pro, iPhone"
 msgstr "por ejemplo, MacBook Pro, iPhone"
 
-#: packages/admin/src/components/ContentSettingsPanel.tsx:845
+#: packages/admin/src/components/ContentSettingsPanel.tsx:842
 #: packages/admin/src/components/editor/PluginBlockNode.tsx:367
 #: packages/admin/src/components/editor/PluginBlockNode.tsx:368
 #: packages/admin/src/components/MenuEditor.tsx:544
@@ -2750,7 +2750,7 @@ msgstr "Editar {collectionLabel}"
 msgid "Edit {title}"
 msgstr "Editar {title}"
 
-#: packages/admin/src/components/ContentSettingsPanel.tsx:952
+#: packages/admin/src/components/ContentSettingsPanel.tsx:949
 msgid "Edit byline"
 msgstr "Editar firma"
 
@@ -3071,7 +3071,7 @@ msgstr "Error al crear el administrador"
 msgid "Failed to create backup"
 msgstr ""
 
-#: packages/admin/src/components/ContentSettingsPanel.tsx:936
+#: packages/admin/src/components/ContentSettingsPanel.tsx:933
 msgid "Failed to create byline"
 msgstr "No se pudo crear la firma"
 
@@ -3549,7 +3549,7 @@ msgstr "Error al actualizar {0}"
 msgid "Failed to update backup settings"
 msgstr ""
 
-#: packages/admin/src/components/ContentSettingsPanel.tsx:986
+#: packages/admin/src/components/ContentSettingsPanel.tsx:983
 msgid "Failed to update byline"
 msgstr "No se pudo actualizar la firma"
 
@@ -5101,7 +5101,7 @@ msgstr "No hay firmas disponibles en {entryLocale}. Crea una variante desde la p
 msgid "No bylines found"
 msgstr "No se han encontrado firmas"
 
-#: packages/admin/src/components/ContentSettingsPanel.tsx:877
+#: packages/admin/src/components/ContentSettingsPanel.tsx:874
 msgid "No bylines selected."
 msgstr "No se han seleccionado firmas."
 
@@ -5887,7 +5887,7 @@ msgstr "Publicado por"
 msgid "Python"
 msgstr ""
 
-#: packages/admin/src/components/ContentSettingsPanel.tsx:885
+#: packages/admin/src/components/ContentSettingsPanel.tsx:882
 msgid "Quick create byline"
 msgstr "Creación rápida de firma"
 
@@ -6027,7 +6027,7 @@ msgstr "La versión es demasiado reciente para instalarse"
 
 #: packages/admin/src/components/BlockKitMediaPickerField.tsx:84
 #: packages/admin/src/components/BlockKitMediaPickerField.tsx:115
-#: packages/admin/src/components/ContentSettingsPanel.tsx:854
+#: packages/admin/src/components/ContentSettingsPanel.tsx:851
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:199
 #: packages/admin/src/components/PortableTextEditor.tsx:3193
 #: packages/admin/src/components/settings/GeneralSettings.tsx:194
@@ -6293,7 +6293,7 @@ msgstr "Role"
 msgid "Role {role}"
 msgstr "Rol {role}"
 
-#: packages/admin/src/components/ContentSettingsPanel.tsx:859
+#: packages/admin/src/components/ContentSettingsPanel.tsx:856
 msgid "Role label"
 msgstr "Etiqueta de rol"
 
@@ -6312,7 +6312,7 @@ msgstr ""
 msgid "Same window"
 msgstr "Misma ventana"
 
-#: packages/admin/src/components/ContentSettingsPanel.tsx:992
+#: packages/admin/src/components/ContentSettingsPanel.tsx:989
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:395
 #: packages/admin/src/components/editor/ImageDetailPanel.tsx:589
 #: packages/admin/src/components/editor/ImageNode.tsx:264
@@ -6375,7 +6375,7 @@ msgstr "Guardado"
 msgid "Saved \"{0}\"."
 msgstr ""
 
-#: packages/admin/src/components/ContentSettingsPanel.tsx:992
+#: packages/admin/src/components/ContentSettingsPanel.tsx:989
 #: packages/admin/src/components/FieldEditor.tsx:660
 #: packages/admin/src/components/MediaDetailPanel.tsx:425
 #: packages/admin/src/components/MenuEditor.tsx:626
@@ -7073,8 +7073,8 @@ msgstr "Saltado"
 
 #: packages/admin/src/components/BylineFieldEditor.tsx:239
 #: packages/admin/src/components/ContentSettingsPanel.tsx:394
-#: packages/admin/src/components/ContentSettingsPanel.tsx:901
-#: packages/admin/src/components/ContentSettingsPanel.tsx:963
+#: packages/admin/src/components/ContentSettingsPanel.tsx:898
+#: packages/admin/src/components/ContentSettingsPanel.tsx:960
 #: packages/admin/src/components/ContentTypeEditor.tsx:111
 #: packages/admin/src/components/ContentTypeEditor.tsx:402
 #: packages/admin/src/components/ContentTypeList.tsx:97
@@ -7743,8 +7743,8 @@ msgstr ""
 msgid "Unable to reach marketplace"
 msgstr "No se puede llegar al mercado"
 
-#: packages/admin/src/components/ContentSettingsPanel.tsx:1006
-#: packages/admin/src/components/ContentSettingsPanel.tsx:1023
+#: packages/admin/src/components/ContentSettingsPanel.tsx:1003
+#: packages/admin/src/components/ContentSettingsPanel.tsx:1020
 msgid "Unassigned"
 msgstr "No asignado"
 
@@ -7846,7 +7846,7 @@ msgstr "Widget sin título"
 msgid "Unverified publisher"
 msgstr "Editor no verificado"
 
-#: packages/admin/src/components/ContentSettingsPanel.tsx:833
+#: packages/admin/src/components/ContentSettingsPanel.tsx:830
 msgid "Up"
 msgstr "Arriba"
 
