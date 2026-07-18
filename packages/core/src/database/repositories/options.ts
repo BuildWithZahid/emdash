@@ -90,6 +90,18 @@ export class OptionsRepository {
 	}
 
 	/**
+	 * Deletes multiple options at once
+	 */
+	async deleteMany<T = unknown>(options: Record<string, T>): Promise<void> {
+		const entries = Object.entries(options);
+		if (entries.length === 0) return;
+
+		for (const [name, _] of entries) {
+			await this.delete(name);
+		}
+	}
+
+	/**
 	 * Check if an option exists
 	 */
 	async exists(name: string): Promise<boolean> {

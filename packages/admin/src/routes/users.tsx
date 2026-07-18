@@ -4,27 +4,27 @@
  * Admin-only route for managing users, roles, and invites.
  */
 
-import { useLingui } from "@lingui/react/macro";
-import { Trans } from "@lingui/react/macro";
-import { useQuery, useInfiniteQuery, useMutation, useQueryClient } from "@tanstack/react-query";
+import { useKumoToastManager } from "@cloudflare/kumo";
+import { Trans, useLingui } from "@lingui/react/macro";
+import { keepPreviousData, useInfiniteQuery, useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import * as React from "react";
 
 import { ConfirmDialog } from "../components/ConfirmDialog.js";
 import {
+	InviteUserModal,
+	UserDetail,
 	UserList,
 	UserListSkeleton,
-	UserDetail,
-	InviteUserModal,
 	useRolesConfig,
 } from "../components/users";
 import {
-	fetchUsers,
-	fetchUser,
-	updateUser,
-	sendRecoveryLink,
 	disableUser,
 	enableUser,
+	fetchUser,
+	fetchUsers,
 	inviteUser,
+	sendRecoveryLink,
+	updateUser,
 	type UpdateUserInput,
 } from "../lib/api";
 
@@ -46,6 +46,7 @@ export function UsersPage() {
 	const { t } = useLingui();
 	const { getRoleLabel } = useRolesConfig();
 	const queryClient = useQueryClient();
+	const toastManager = useKumoToastManager();
 
 	// State
 	const [searchQuery, setSearchQuery] = React.useState("");
@@ -73,6 +74,7 @@ export function UsersPage() {
 			}),
 		initialPageParam: undefined as string | undefined,
 		getNextPageParam: (lastPage) => lastPage.nextCursor,
+		placeholderData: keepPreviousData,
 	});
 
 	const userDetailQuery = useQuery({
@@ -125,11 +127,23 @@ export function UsersPage() {
 				// Email sent — close modal
 				setIsInviteOpen(false);
 			}
+			toastManager.add({
+				title: t`Invitation sent`,
+				description: result.message,
+				variant: "success",
+				timeout: 4000,
+			});
 			// Refresh user list (invite token was created either way)
 			void queryClient.invalidateQueries({ queryKey: ["users"] });
 		},
 		onError: (error: Error) => {
 			setInviteError(error.message);
+			toastManager.add({
+				title: t`Failed to send invitation`,
+				description: error.message,
+				variant: "error",
+				timeout: 5000,
+			});
 		},
 	});
 

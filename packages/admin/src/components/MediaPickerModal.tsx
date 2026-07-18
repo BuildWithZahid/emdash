@@ -381,6 +381,10 @@ export function MediaPickerModal({
 		}
 	};
 
+	const handlePreview = () => {
+		window.open(selectedItem.item.url, '_blank', 'noopener,noreferrer');
+	};
+
 	const handleClose = () => {
 		onOpenChange(false);
 		setSelectedItem(null);
@@ -739,6 +743,9 @@ export function MediaPickerModal({
 							</span>
 						)}
 					</div>
+					<Button variant="outline" onClick={handlePreview} disabled={!selectedItem}>
+						{t`Preview`}
+					</Button>
 					<Button variant="outline" onClick={handleClose}>
 						{t`Cancel`}
 					</Button>

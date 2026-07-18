@@ -14,17 +14,17 @@ import type { Database } from "../database/types.js";
 import { getDb } from "../loader.js";
 import { cachedQuery, invalidateObjectCache } from "../object-cache/index.js";
 import { peekRequestCache, requestCached } from "../request-cache.js";
-
-/** Object-cache namespace for site settings. */
-const SETTINGS_CACHE_NAMESPACE = "settings";
 import type { Storage } from "../storage/types.js";
 import {
 	createSingleFlightCache,
-	type SingleFlightCache,
 	invalidateSingleFlightCache,
 	singleFlightCached,
+	type SingleFlightCache,
 } from "../utils/single-flight-cache.js";
-import type { SiteSettings, SiteSettingKey, MediaReference, SeoSettings } from "./types.js";
+import type { MediaReference, SeoSettings, SiteSettingKey, SiteSettings } from "./types.js";
+
+/** Object-cache namespace for site settings. */
+const SETTINGS_CACHE_NAMESPACE = "settings";
 
 /** Prefix for site settings in the options table */
 const SETTINGS_PREFIX = "site:";
@@ -303,17 +303,31 @@ export async function setSiteSettings(
 	db: Kysely<Database>,
 ): Promise<void> {
 	const options = new OptionsRepository(db);
+	const keysToDelete: string[] = ['logo', 'favicon'];
 
 	// Convert settings to options format
 	const updates: Record<string, unknown> = {};
+	const deletes: Record<string, unknown> = {};
+
 	for (const [key, value] of Object.entries(settings)) {
 		if (value !== undefined) {
 			updates[`${SETTINGS_PREFIX}${key}`] = value;
 		}
 	}
 
+	for (const key of keysToDelete) {
+		if (!(key in settings)) {
+			deletes[`${SETTINGS_PREFIX}${key}`] = null;
+		}
+	}
+
 	try {
 		await options.setMany(updates);
+
+		if (Object.keys(deletes).length > 0) {
+			await options.deleteMany(deletes);
+		}
+		
 	} finally {
 		invalidateSiteSettingsCache();
 	}
